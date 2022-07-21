@@ -1,0 +1,55 @@
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  width: 65px;
+  height: 65px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inner-box {
+  width: 45%;
+  height: 45%;
+  border-radius: 3px;
+  margin:auto;
+  background-color: #00588D;
+  animation: fade 3s var(--delay) ease-in-out infinite;
+}
+
+.one{
+  --delay:0.1s;
+}
+
+.two{
+  --delay:0.2s;
+}
+
+.three{
+  --delay:0.3s;
+}
+
+.four{
+  --delay:0.4s;
+}
+
+@keyframes fade {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.2;
+  }
+  100%{
+    opacity: 1;
+  }
+}

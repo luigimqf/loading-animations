@@ -1,0 +1,40 @@
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  background-color: lightblue;
+}
+
+.dot{
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: black;
+  animation: opacity 1.5s var(--delay) linear infinite;
+}
+
+.one{
+  --delay:0.1s;
+}
+.two{
+  --delay:0.2s;
+}
+.three{
+  --delay:0.3s;
+}
+
+@keyframes opacity {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}

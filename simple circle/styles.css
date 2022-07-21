@@ -1,0 +1,29 @@
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 10px solid lightslategray;
+  border-top-color: lightgreen;
+  animation: loader 1s ease-out infinite;
+}
+
+@keyframes loader {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
